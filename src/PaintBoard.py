@@ -106,6 +106,15 @@ class PaintBoard(QMainWindow,Ui_MainWindow):
         self.invertBtn.clicked.connect(self._invert)
         self.grayBtn.clicked.connect(self._gray)
         self.embossBtn.clicked.connect(self._emboss)
+
+        self.baseAdjustBtn.setHidden(True)
+        self.blurBtn.setHidden(True)
+        self.sharpenBtn.setHidden(True)
+        self.cannyBtn.setHidden(True)
+        self.binaryBtn.setHidden(True)
+        self.invertBtn.setHidden(True)
+        self.grayBtn.setHidden(True)
+        self.embossBtn.setHidden(True)
         list(map(lambda btn:btn.clicked.connect(self._toolBoxClicked),self.toolBtns))
 
 

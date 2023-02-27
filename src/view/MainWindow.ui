@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>971</width>
-    <height>631</height>
+    <height>643</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -47,7 +47,7 @@
          </property>
          <property name="icon">
           <iconset resource="../../imgs.qrc">
-           <normaloff>:/img/img/pen.png</normaloff>:/img/img/pen.png</iconset>
+           <normaloff>:/img/img/cpen.png</normaloff>:/img/img/cpen.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -67,7 +67,7 @@
          </property>
          <property name="icon">
           <iconset resource="../../imgs.qrc">
-           <normaloff>:/img/img/bucket.png</normaloff>:/img/img/bucket.png</iconset>
+           <normaloff>:/img/img/painter.png</normaloff>:/img/img/painter.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -87,7 +87,7 @@
          </property>
          <property name="icon">
           <iconset resource="../../imgs.qrc">
-           <normaloff>:/img/img/line.png</normaloff>:/img/img/line.png</iconset>
+           <normaloff>:/img/img/cline.png</normaloff>:/img/img/cline.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -113,7 +113,7 @@
          </property>
          <property name="icon">
           <iconset resource="../../imgs.qrc">
-           <normaloff>:/img/img/rect.png</normaloff>:/img/img/rect.png</iconset>
+           <normaloff>:/img/img/square.png</normaloff>:/img/img/square.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -133,7 +133,7 @@
          </property>
          <property name="icon">
           <iconset resource="../../imgs.qrc">
-           <normaloff>:/img/img/ellipse.png</normaloff>:/img/img/ellipse.png</iconset>
+           <normaloff>:/img/img/circle.png</normaloff>:/img/img/circle.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -159,7 +159,7 @@
          </property>
          <property name="icon">
           <iconset resource="../../imgs.qrc">
-           <normaloff>:/img/img/erase.png</normaloff>:/img/img/erase.png</iconset>
+           <normaloff>:/img/img/earse.png</normaloff>:/img/img/earse.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -392,12 +392,12 @@
      <x>0</x>
      <y>0</y>
      <width>971</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>文件</string>
+     <string>File</string>
     </property>
     <addaction name="actionNew"/>
     <addaction name="actionOpenImg"/>
@@ -405,28 +405,11 @@
    </widget>
    <widget class="QMenu" name="menu_2">
     <property name="title">
-     <string>编辑</string>
+     <string>Edit</string>
     </property>
     <addaction name="actionClear"/>
-    <addaction name="actionClearDraw"/>
-   </widget>
-   <widget class="QMenu" name="menu_3">
-    <property name="title">
-     <string>图像</string>
-    </property>
-    <widget class="QMenu" name="menu_4">
-     <property name="title">
-      <string>旋转</string>
-     </property>
-     <addaction name="actionClockWise"/>
-     <addaction name="actionAntiClockWise"/>
-     <addaction name="actionVerFilp"/>
-     <addaction name="actionHorFilp"/>
-    </widget>
-    <addaction name="menu_4"/>
    </widget>
    <addaction name="menu"/>
-   <addaction name="menu_3"/>
    <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
@@ -436,7 +419,7 @@
      <normaloff>:/img/img/new.png</normaloff>:/img/img/new.png</iconset>
    </property>
    <property name="text">
-    <string>新建</string>
+    <string>New</string>
    </property>
   </action>
   <action name="actionOpenImg">
@@ -445,7 +428,7 @@
      <normaloff>:/img/img/open.png</normaloff>:/img/img/open.png</iconset>
    </property>
    <property name="text">
-    <string>打开图像</string>
+    <string>Open</string>
    </property>
   </action>
   <action name="actionSave">
@@ -454,7 +437,7 @@
      <normaloff>:/img/img/save.png</normaloff>:/img/img/save.png</iconset>
    </property>
    <property name="text">
-    <string>保存</string>
+    <string>Save</string>
    </property>
   </action>
   <action name="actionClear">
@@ -463,7 +446,7 @@
      <normaloff>:/img/img/clear.png</normaloff>:/img/img/clear.png</iconset>
    </property>
    <property name="text">
-    <string>清空</string>
+    <string>Clear</string>
    </property>
   </action>
   <action name="actionClearDraw">
